@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 마지막 독모</title>
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+    <meta property="og:image" content="https://www.explica.co/wp-content/uploads/2020/12/800pxchristmastr-8626b47429e6ac2912a00a4f680b2f41-800x400.jpg">
+    <meta property="og:title" content="독모 줌 초대장">
+    <meta property="og:description" content="어서들 들어오시오">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        body {
+            background-color: #9b070f;
+        }
+        .envelope {
+            width: 200px;
+            height: 200px;
+            
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://lh3.googleusercontent.com/proxy/jZ5bgyXrFiypA3R9UDIIeJ4DCZAq6e2I6p4B5hTOzGRvuGYXrfXo2Db6Qzkam3kwLNte0ae0DFNW4AgA5pI3vE7HHNjnjBoX4lJXP8KEnOS-rdLSbqTwcyuaO2VjWrbTw2FnpCyoXmzpCZLWR5Qih9-xK_9fXtbanNIYww');
+            background-size: cover;
+            background-position: center;
+
+            margin: 80px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .messagebox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+            padding: 30px;
+            font-size: 18px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan {
+                width: 150px;
+                height: 150px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 220px auto 0px auto;
+            }
+        }
+
+    </style>
+
+    <script>
+        
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('독모 줌 링크로 연결됩니다.')
+            window.location.href='https://us04web.zoom.us/j/3508135796?pwd=MlNTekZRaVRsT3krQ0x1cjN0NCtUdz09'
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">초대장이 도착했습니다.</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2020년 마지막 독모에 초대합니다</h1>
+        <div class="messagebox">
+            여러분 안녕 <br />
+            웹 개발 강의를 갓 들은 <br />
+            미쳐가는 반장의 줌 초대장입니다 <br />
+            귀엽져? <br />
+            위의 움짤을 클릭하시면 링크로 연결됩니다 <br />
+            <p class="from">2020.12.26 동은</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
